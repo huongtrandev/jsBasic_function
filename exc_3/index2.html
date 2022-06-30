@@ -7,7 +7,7 @@
     <title>Document</title>
   </head>
   <body>
-    <script>
+    <!-- <script>
       function square(a) {
         return a * a;
       }
@@ -34,9 +34,22 @@
       let numb = 6;
       let result = factorial(numb);
       console.log(result);
-    </script>
+    </script> -->
     <script>
-      function checkNum() {}
+      let num = prompt("nhập vào đây một ký tự: ");
+      function checkNum(num) {
+        // return (
+        //   (typeof num == "string" || typeof num == "number") &&
+        //   !isNaN(num - 0) &&
+        //   num !== ""
+        // );
+        // return parseFloat(num) == num;
+        if (isNaN(num)) {
+          return false;
+        }
+        return true;
+      }
+      document.write(checkNum(num));
     </script>
   </body>
 </html>
