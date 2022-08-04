@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function findMin(a, b, c) {
+        let tempArray = [a, b, c];
+        let min = tempArray[0];
+        for (let i = 0; i < tempArray.length; i++) {
+          if (tempArray[i] < min) {
+            min = tempArray[i];
+          }
+        }
+        console.log(min);
+        alert("Min = " + min);
+      }
+      let a = prompt("nhập vào số a:");
+      let b = prompt("nhập vào số b:");
+      let c = prompt("nhập vào số c");
+
+      findMin(a, b, c);
+    </script>
+  </body>
+</html>
