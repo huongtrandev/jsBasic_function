@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- <script>
+      function checkNum(arr, num) {
+        let count = 0;
+        for (let i = 0; i <= arr.length; i++) {
+          if (arr[i] == num) {
+            count++;
+            console.log(count);
+          } else {
+            return -1;
+          }
+        }
+      }
+      let arr = prompt("Nhap day ky tu (ngan cach bang dau ,)").split(",");
+      let num = prompt("Nhap so vao day: ");
+      document.write(checkNum(arr, num));
+    </script> -->
+    <script>
+      function solution(array, char) {
+        let numOfAppear = 0;
+        for (let i = 0; i < array.length; i++) {
+          if (array[i] == char) {
+            numOfAppear++;
+          }
+        }
+        if (numOfAppear == 0) {
+          return -1;
+        }
+        return numOfAppear;
+      }
+
+      let array = prompt("Nhap day ky tu (ngan cach bang dau ,)").split(",");
+      let char = prompt("Nhap ky tu can tim");
+      document.write(solution(array, char));
+      cpm;
+    </script>
+  </body>
+</html>
